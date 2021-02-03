@@ -8,4 +8,17 @@ function BMI(weight_kg, height_m){
 
 var bmi = (Math.round(BMI(weight, height)))
 
-console.log('Your bmi is ' +  bmi)
+function calculateMsg(x){
+    if (x < 18.5){
+        return console.log('Your bmi is ' + x + ', so you are underweight.')
+    }
+    else if(x >= 18.5 || x <= 24.9){
+        return console.log('Your bmi is ' + x + ', so you are normal.')
+
+    }
+    else{
+        return console.log('Your bmi is ' + x + ', so you are overweight.')
+    }
+}
+
+calculateMsg(bmi);
